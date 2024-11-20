@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a, li, ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  padding: 20px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Light Mode Styles */
+.navbar.light {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode Styles */
+.navbar.dark {
+  background-color: #000000;
+  color: white;
+}
+
+.container {
+  height: 80px;
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.navbar_text i{
+  margin: 5px;
+}
+
+.navbar_rightpart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: rgb(95 45 237);
+  border-radius: 8px;
+  color: white;
+}
+
+.contact {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+/* Dark Mode Adjustments for Buttons and Icons */
+.navbar.dark .btn {
+  background-color: rgb(95 45 237);
+}
+
+.navbar.dark .contact {
+  border-color: white;
+}
+
+.navbar.dark .navbar_text li {
+  color: white;
+}
+
+/* Dark Mode for the Sun/Moon Icon */
+.navbar.dark .contact i {
+  color: white;
+}
+
+.navbar.light .contact i {
+  color: black;
+}
